@@ -1,0 +1,228 @@
+body{
+    margin: auto
+}
+a{
+    text-decoration: none;
+}
+header{
+    height:60px ;
+    color: white;
+    background-color: #3b2632;
+}
+.brand{
+    float:left;
+    margin-left: 2%;
+    margin-top: -1%;
+}
+.social{
+    color: white;
+    float: right;
+}
+.sociallogo{
+    height:50px;
+}
+.search{
+    height: 400px;
+    background-image:url('foodimg.jpg');
+    background-repeat:no-repeat ;
+    background-size:100% 400px;
+}
+.logo{
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 45%;
+    margin-top: 1%;
+    position:absolute;
+    font-size: 90px;
+    animation:revolve 3s;
+}
+@keyframes revolve{
+    0%{
+        transform:rotate(30deg);
+        margin-left: 2%;
+    }
+    25%{
+        transform:rotate(90deg);
+        margin-left: 20%;
+    }
+    50%{
+        transform:rotate(180deg);
+        margin-left: 40%;
+    }
+    75%{
+        transform:rotate(270deg);
+        margin-left: 80%;
+    }
+    100%{
+        transform:rotate(360deg);
+        margin-left: 40%;
+    }
+}
+.logo >span{
+    margin-left: 23%;
+    margin-top: 15%;
+    position:absolute;
+
+}
+.heading{
+    font-size: 60px;
+    color:white;
+    margin-left: 26%;
+    margin-top: 12%;
+    position:absolute;
+}
+.dropdown{
+width: 550px;
+height: 50px;
+margin-left: 462px;
+margin-top: 250px;
+position:absolute;
+}
+select{
+    font-size: 20px;
+    text-align: center;
+    width: 40%;
+    height: 50px;
+}
+.restaurant{
+    width: 59%;
+}
+.quicksearch{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+    display: inline-block;
+}
+.quickheading{
+    display:block;
+    font-size: 30px;
+    color:#3b2632;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 2%;
+}
+.quickheading:hover{
+    font-size: 40px;
+}
+.quicksubheading{
+    display:block;
+    font-size: 20px;
+    color:grey;
+    line-height: 2;
+    margin-left: 2%;
+
+}
+.tilecontainer{
+    width: 30%;
+    height: 180px;
+    float: left;
+    margin-top: 2%;
+    margin-left: 2%;
+    box-shadow: 10px 20px 10px rgb(52, 15, 15);
+    animation:dance 10s infinite;
+}
+@keyframes dance{
+    0% {transform:rotate(-5deg)}
+    25% {transform:rotate(-0deg)}
+    50% {transform:rotate(5deg)}
+    75% {transform:rotate(0deg)}
+    100% {transform:rotate(-5deg)}
+}
+.tilecontainer:hover{
+    transform:scale(1.1)
+}
+.tilecomponent1{
+    width: 50%;
+    height: 180px;
+    float: left;
+}
+.tilecomponent1 > img{
+    width: 100%;
+    height: 180px;
+}
+.tilecomponent2{
+    width: 45%;
+    float: left;
+    margin-left: 5%;
+    margin-top: 15%;
+}
+.componentheading{
+    color:#3b2632;
+    font-size: 25px;
+}
+.componentsubheading{
+    color:grey;
+    font-size: 15px;
+}
+footer{
+    margin-top: 5%;
+    height: 120px;
+    text-align: center;
+    background-color: #44303b;
+    color: white;
+}
+.footdiv{
+    height: 70px;
+    width: 33%;
+    float: left;
+    border-right: 2px solid white;
+}
+.noborder{
+    border: none;
+}
+@media screen and (max-width:1600px){
+    body{
+        background-color: rgb(237, 211, 211);
+    }
+    
+}
+@media screen and (max-width:1400px){
+    body{
+        background-color: rgb(202, 232, 133);
+    }
+    
+}
+@media screen and (max-width:800px){
+    body{
+        background-color: rgb(158, 231, 164);
+        .tilecontainer{
+            width: 100%;
+        }
+        .dropdown{
+            width: 70%;
+            margin-left: 21%;
+            margin-top: 32%;
+        }
+        .heading{
+            font-size: 46px;
+            margin-top: 24%;
+            margin-left: 21%;
+        }
+
+    }
+    
+}
+@media screen and (max-width:600px){
+    body{
+        background-color: rgb(227, 190, 216);
+    }
+    .dropdown{
+        width: 70%;
+        margin-left: 21%;
+        margin-top: 32%;
+    }
+    .heading{
+        font-size: 24px;
+        margin-top: 39%;
+        margin-left: 30%;
+    }
+    
+}
+@media screen and  (max-width:400px){
+    body{
+        background-color: rgb(136, 197, 167);
+    }
+    
+}
